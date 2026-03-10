@@ -1,0 +1,118 @@
+@import "tailwindcss";
+@import "vant/lib/index.css";
+
+@theme {
+  --color-tea-50: #FFF8F0;
+  --color-tea-100: #F5E6D3;
+  --color-tea-200: #F0E0D0;
+  --color-tea-500: #D4956A;
+  --color-tea-600: #E8A87C;
+  --color-tea-800: #8D6E63;
+  --color-tea-900: #5D4037;
+}
+
+:root {
+  --van-primary-color: #D4956A;
+  --van-background: #FBF5F0;
+  --van-background-2: #FBF5F0;
+  --van-cell-group-inset-border-radius: 16px;
+  --van-cell-border-color: #F5EDE6;
+  --van-field-label-color: #8D6E63;
+  --van-field-input-text-color: #5D4037;
+  --van-tabs-bottom-bar-color: #D4956A;
+  --van-tag-primary-color: #D4956A;
+  --van-button-primary-background: #D4956A;
+  --van-button-primary-border-color: #D4956A;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #FBF5F0;
+  color: #5D4037;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Xiaohongshu-style card shadows */
+.van-cell-group--inset {
+  border-radius: 16px !important;
+  box-shadow: 0 2px 12px rgba(212, 149, 106, 0.08);
+  overflow: hidden;
+}
+
+/* Smooth page transitions */
+.van-tabbar {
+  box-shadow: 0 -2px 12px rgba(212, 149, 106, 0.08);
+  border-top: none !important;
+}
+
+/* Button styles */
+.van-button--primary {
+  background: linear-gradient(135deg, #D4956A, #E8A87C) !important;
+  border: none !important;
+  font-weight: 600;
+}
+
+.van-button--primary:active {
+  opacity: 0.9;
+}
+
+/* Radio & Checkbox warm style */
+.van-radio__icon--checked .van-icon,
+.van-checkbox__icon--checked .van-icon {
+  background-color: #D4956A;
+  border-color: #D4956A;
+}
+
+/* Tag styles */
+.van-tag--primary.van-tag--plain {
+  color: #D4956A;
+  border-color: #E8A87C;
+}
+
+/* Rate */
+.van-rate__icon--full {
+  color: #D4956A;
+}
+
+/* Popup rounded */
+.van-popup--bottom {
+  border-radius: 20px 20px 0 0 !important;
+}
+
+/* Scrollbar hide for mobile feel */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Loading */
+.van-loading__spinner {
+  color: #D4956A !important;
+}
+
+/* Empty state */
+.van-empty__description {
+  color: #8D6E63;
+}
+
+/* Smooth transitions */
+.van-tab__text {
+  transition: color 0.2s ease;
+}
+
+/* Card press effect */
+.van-cell:active {
+  background-color: #FBF5F0 !important;
+}
